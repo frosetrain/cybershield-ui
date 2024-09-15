@@ -10,13 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@hebilicious/form-actions-nuxt": "^0.3.0",
+    "@nuxt/eslint": "^0.5.7",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia/nuxt": "^0.5.4",
     "nuxt": "^3.13.0",
+    "showdown": "^2.1.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/showdown": "^2.0.6",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6"
   }
