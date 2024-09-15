@@ -81,13 +81,6 @@ const email = ref("");
 const instagram = ref("");
 const findImages = ref(false);
 async function submitOsint() {
-    console.log(
-        targetName.value,
-        additionalInfo.value,
-        email.value,
-        instagram.value,
-        findImages.value,
-    );
     osintStore.id = await $fetch("/api/osint/submit", {
         method: "POST",
         body: {
@@ -98,7 +91,6 @@ async function submitOsint() {
             findImages: findImages.value,
         },
     });
-    console.log(osintStore.id);
     navigateTo("/osintresults");
 }
 </script>

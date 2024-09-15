@@ -26,7 +26,7 @@
         >
             Check
         </button>
-        <p v-if="oops">Invalid URL.</p>
+        <p v-if="oops" class="text-gray-900 dark:text-gray-100">Invalid URL.</p>
         <svg
             v-if="loading"
             aria-hidden="true"
@@ -60,7 +60,7 @@
             >
                 The website is probably safe.
             </p>
-            <p class="mt-2">Suspiousness: {{ result.score }}%</p>
+            <p class="mt-2 text-gray-700 dark:text-gray-300">Suspiousness: {{ result.score }}%</p>
         </div>
     </div>
 </template>

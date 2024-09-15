@@ -39,12 +39,11 @@ const osintResult = ref({
     total_payloads: 0,
     result: "",
 });
-const showdownConverter = new showdown.Converter();
-// if (osintStore.id === -1) {
-// navigateTo("/osint");
-// }
+const showdownConverter = new showdown.Converter({ simplifiedAutoLink: true });
+if (osintStore.id === -1) {
+    navigateTo("/osint");
+}
 async function refresh() {
-    console.log("smmdm");
     const result = await $fetch("/api/osint/status", {
         method: "GET",
         query: {
