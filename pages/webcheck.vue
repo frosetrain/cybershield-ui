@@ -60,7 +60,7 @@
             >
                 The website is probably safe.
             </p>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Suspicousness: {{ result.score }}%</p>
+            <p class="mt-2 text-gray-700 dark:text-gray-300">Suspiciousness: {{ result.score }}%</p>
         </div>
     </div>
 </template>
